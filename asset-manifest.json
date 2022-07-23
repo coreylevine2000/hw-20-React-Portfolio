@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/hw-20-React-Portfolio/static/css/main.f0d685eb.css",
+    "main.js": "/hw-20-React-Portfolio/static/js/main.d5cb7fe1.js",
+    "static/media/AMDB.png": "/hw-20-React-Portfolio/static/media/AMDB.b3fc850d77430b72cddb.png",
+    "static/media/TaleSpinner.PNG": "/hw-20-React-Portfolio/static/media/TaleSpinner.63c9771c6bdb8d06b75a.PNG",
+    "static/media/ReadMe.PNG": "/hw-20-React-Portfolio/static/media/ReadMe.61914010813b0fadf4a7.PNG",
+    "static/media/Face.png": "/hw-20-React-Portfolio/static/media/Face.f540b4ce3773b868e120.png",
+    "static/media/NoteTaker.PNG": "/hw-20-React-Portfolio/static/media/NoteTaker.b5c6f6c3f3cc6e7ceff4.PNG",
+    "index.html": "/hw-20-React-Portfolio/index.html",
+    "main.f0d685eb.css.map": "/hw-20-React-Portfolio/static/css/main.f0d685eb.css.map",
+    "main.d5cb7fe1.js.map": "/hw-20-React-Portfolio/static/js/main.d5cb7fe1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0d685eb.css",
+    "static/js/main.d5cb7fe1.js"
+  ]
+}
