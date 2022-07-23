@@ -1,18 +1,52 @@
 import React from 'react';
+import {useState} from 'react';
 
 export default function Contact() {
+  const handleChange = (e) => {
+    if(!isValidEmail(e.target.value)) {
+      setError('Email is invalid');
+    } else {
+      setError(null);
+    } 
+
+    setMessage(e.target.value);
+  };
+
+  const handleClick = () => {
+    window.alert(`Thank you for your interest! I will reach out to you when I am first availible`);
+  }
+
+  const [message, setMessage] = useState('');
+  const [error, setError] = useState(null);
+
+  function isValidEmail(email) {
+    return /\S+@\S+\.\S+/.test(email); 
+  }
+
   return (
-    <div>
-      <h1>Contact Information</h1>
-      <p>
-        To contact me, I am availible to be contacted by the following platforms:
-        <ul>
-          <li>Email: <a href="mailto:Coreylevine2000@gmail.com">Coreylevine2000@gmail.com</a></li>
-          <li><a href="https://www.linkedin.com/in/corey-levine-09063727">LinkedIn</a></li>
-          <li><a href="https://github.com/coreylevine2000">Github</a></li>
-          <li>Telephone Number: 555-555-5555</li>
-        </ul>
-      </p>
-    </div>
-  );
+    <div className="card">
+      <h3>Contact Me: </h3>
+      <div className="form">
+          <div className="mb-3">
+        <label for="exampleFormControlInput1" className="form-label">Email address:</label>
+        <input 
+          type="email" 
+          className="form-control" 
+          id="message" 
+          name="message" 
+          value={message} 
+          onChange={handleChange} />
+
+        {error && <p style={{color: 'red'}}>{error}</p>}  
+      </div>
+
+
+
+      <div className="mb-3">
+        <label for="exampleFormControlTextarea1" className="form-label">Your message: </label>
+        <textarea className="form-control" id="messageInput" rows="3"></textarea>
+      </div>
+      <button type="button" className="btn btn-primary" onClick={handleClick}>Submit</button>
+      </div>  
+    </div>)
 }

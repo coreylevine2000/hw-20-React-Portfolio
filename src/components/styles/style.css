@@ -1,0 +1,40 @@
+a.resumeIcon {
+    background-image: url(../images/resumeicon.svg);
+  }
+  a.linkedin {
+    background-image: url(../images/linkedin-svgrepo-com.svg);
+  }
+  a.github {
+    background-image: url(../images/github-svgrepo-com.svg);
+  }
+  a.social:hover {
+    opacity: 1;
+  }
+  
+  /* Styles for larger screens */
+  @media screen and (min-width: 720px) {
+    .grid {
+      display: grid;
+      grid-template-columns: auto auto;
+      max-width: 1200px;
+      justify-content: space-evenly;
+      margin: 0 auto;
+    }
+  
+    header {
+      min-height: 450px;
+    }
+  
+    main {
+      padding-top: 50px;
+    }
+  
+    main p {
+      line-height: 1.6em;
+    }
+  
+    footer {
+      font-size: 1.3em;
+    }
+  }
+  
